@@ -1,0 +1,12 @@
+.container{ /*PARA O MOBILE*/
+    --max-width: 375px;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2); /* x2 pq o padding é dos dois lados*/
+    margin-inline: auto;
+    border: solid violet;
+}
+
+@media (width >= 80em) {
+    .container{
+        --max-width: 80rem;
+    }
+}

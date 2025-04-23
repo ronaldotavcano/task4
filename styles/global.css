@@ -38,3 +38,53 @@
     --fs-2xl: 2.5rem;
 
 }
+
+html{
+    font-family:  var(--ff-sans);
+    font-weight: var(--fw-base);
+    font-size: var(--fs-base);
+    line-height: 1.6;
+    color: var(--txt-prim);
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3{
+    line-height: 1.2;
+    color: var(--txt-prim);
+    font-weight: var(--fw-bold);
+    letter-spacing: -0.04em;
+}
+
+h1{
+    font-size: var(--fs-2xl);
+}
+
+h2{
+    font-size: var(--fs-xl);
+}
+
+h3{
+    font-size: var(--fs-lg);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul[role="list"]{ /*Sempre que a lista tiver o atributo role ele vai continuar interpretando como lista*/
+    list-style: none;
+}
+
+/*NO DESKTOP FICOU MAIOR O TAMANHO DO QUE NO MOBILE, PARA RESOLVER USAREMOS MEDIA*/
+
+@media (width >= 80em) {
+    :root{
+        --fs-lg: 2rem;
+        --fs-xl: 3rem;
+        --fs-2xl: 4rem;
+    }
+}

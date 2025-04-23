@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root{
+    /*Base colors*/
+    --bg-color: #09090B;
+    --surface-color:#18181B;
+    --str-color: #27272A;
+    --txt-second: #A1A1AA;
+    --txt-prim: #F4F4F5;
+
+    /*Produto colors*/
+    --brand-prim: #F7B733;
+    --brand-second:#FC4A1A;
+
+    /*Fonte*/
+    --ff-sans: 'Inter', system-ui, sans-serif;  /*ff = font-family*/
+    --fw-base: 400;
+    --fw-md: 500;       /*fw = font-weight*/
+    --fw-bold: 800;
+
+    --fs-sm: .875rem; /*fs = font-size*/
+    --fs-base: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2.5rem;
+
+}

@@ -50,6 +50,8 @@ html{
     font-size: var(--fs-base);
     line-height: 1.6;
     color: var(--txt-prim);
+
+    overflow-x: hidden;
 }
 
 body{

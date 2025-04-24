@@ -95,6 +95,11 @@ ul[role="list"]{ /*Sempre que a lista tiver o atributo role ele vai continuar in
     list-style: none;
 }
 
+img{
+    max-width: 100%;
+    display: inline-block;
+}
+
 /*NO DESKTOP FICOU MAIOR O TAMANHO DO QUE NO MOBILE, PARA RESOLVER USAREMOS MEDIA*/
 
 @media (width >= 80em) {

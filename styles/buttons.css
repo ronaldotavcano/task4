@@ -26,6 +26,10 @@
         var(--brand-prim) 100%
     );
     --btn-color: var(--surface-color);
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: var(--btn-color);
 }
 
 .btn-sm{
@@ -63,5 +67,18 @@
         background-clip: text; /* Ao inves de deixar o quadrado de cor no texto, ele vai fazer somente no texto*/
         color: transparent;
         z-index: 1;
+    }
+}
+
+@media (width >= 80em){
+       
+    .btn-sm{
+        font-size: var(--fs-base);
+        padding: .75rem 1.5rem;
+    }
+    
+    .btn-md{
+        font-size: 1.125rem;
+        padding: 1rem 2rem;
     }
 }

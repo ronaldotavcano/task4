@@ -40,6 +40,63 @@
         background: radial-gradient(var(--txt-second), var(--surface-color) 70%);
     }
 
+    & li{
+        color: var(--txt-second);
+        background: url(../assets/icons/Check.svg) no-repeat;
+        padding-left: 2rem;
+    }
+
+    & ul + small{
+        display: block;
+        margin-top: 1.5rem;
+        font-size: 0.875rem;
+        color: var(--txt-second);
+    }
+
+    & .premium{
+        position: relative;
+
+        & .card{
+            padding-top: 4.25rem;
+
+            & > span{
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                padding: .75rem 2rem;
+                background: linear-gradient(
+                    90deg,
+                    var(--brand-second) 0%,
+                    var(--brand-prim) 100%
+                );
+
+                border-top-left-radius: 1.5rem;
+                border-bottom-right-radius: 1.5rem;
+
+                font: 600 var(--fs-sm) var(--ff-sans);
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                color: var(--bg-color);
+            }
+        }
+
+        padding: 2px;
+
+        &::before{
+            content: "";
+            background: linear-gradient(
+                90deg,
+                var(--brand-second) 0%,
+                var(--brand-prim) 100%
+                );
+                position: absolute;
+                inset: 0;
+                border-radius: 1.5rem;
+                z-index: -1;
+        }
+    }
+
     @media (width >= 80em){
     
         --fs-price: 2.5rem;
@@ -47,6 +104,19 @@
         & header{
             max-width: 50rem;
             margin-inline: auto;
+        }
+
+        & .premium .card{
+            padding-bottom: 6rem;
+        }
+
+        .btn-md{
+            font-size: var(--fs-base);
+            padding: .75rem 1.5rem;
+        }
+
+        & .card:nth-child(3) .separator{
+            margin-block: 1.5rem;
         }
     }
 }

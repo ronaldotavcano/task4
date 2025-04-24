@@ -80,6 +80,17 @@ a{
     color: inherit;
 }
 
+a:hover{
+    background: linear-gradient(
+        90deg,
+        var(--brand-second) 0%,
+        var(--brand-prim) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 ul[role="list"]{ /*Sempre que a lista tiver o atributo role ele vai continuar interpretando como lista*/
     list-style: none;
 }

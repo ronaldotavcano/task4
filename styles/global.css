@@ -52,6 +52,8 @@ html{
     color: var(--txt-prim);
 
     overflow-x: hidden;
+
+    scroll-behavior: smooth;
 }
 
 body{

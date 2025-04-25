@@ -1,0 +1,58 @@
+footer{
+    color: var(--txt-second);
+    font-weight: var(--fw-md);
+
+    & .container{
+        padding-inline: 3rem;
+    }
+
+    & .container,
+    & .top{
+        gap: 3rem;
+    }
+
+    & nav.even-columns{
+        gap: 4rem;
+    }
+
+    & .top ul{
+        align-content: start;
+    }
+
+    & .title{
+        font-size: .75rem;
+        letter-spacing: 0.08rem;
+        text-transform: uppercase;
+        color: var(--brand-second);
+    }
+
+    & .bottom{
+        flex-wrap: wrap;
+
+        & > div{
+            margin-right: auto;
+        }
+
+        & span{
+            font-size: .875rem;
+        }
+    }
+
+    @media (width >= 80em){
+        padding-inline: 0;
+        padding-bottom: 2rem;
+    }
+
+    & .top{
+        grid-template-columns: auto 1fr;
+
+        & nav{
+            margin-left: auto;
+
+            & ul{
+                width: 14rem;
+            }
+        }
+
+    }
+}
